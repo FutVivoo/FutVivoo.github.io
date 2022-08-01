@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutVivo</title>
+    <link rel="icon" type="imge/png" href="FutVivo.png"/>
+</head>
+<style>
+    body{
+       
+    }
+    a{
+        color: rgb(255, 255, 255);
+       text-decoration: dashed;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size:xx-large;
+    }
+    nav{
+        text-align: center;
+        padding: 30px 50px 0 0;
+        background-color: rgb(17, 17, 58);
+        height: 100px;
+
+        
+    }
+    .Partidos{
+    background: #ffffff;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    height: 350px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.5);
+}
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(0, 0%, 0%, 0.7);
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria img{
+    width: 50px;
+}
+.hover-galeria p{
+   color: #fff;
+}
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+h2{
+    text-align: center;
+}
+h1{
+    color: white;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <img src="FutVivo.png" alt="" style="width:100px; height: 90px; float: left;">
+            <a href="#Partidos" id="enlace-partidos" class="btn-header">Partidos en Vivo</a>
+            <a href="#Canales" id="enlace-canales" class="btn-header">Canales en Vivo</a>
+        </nav>
+        <section class="Partidos" id="Partidos">
+            <div class="contenedor">
+                <h2 class="titulo">Partidos En Vivo</h2>
+                <div class="galeria-port">
+
+                    <div class="imagen-port">
+                        <img src="barvsreal.png"alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <a href=https://futbollibre.net/en-vivo/directv-sports><p>Barcelona vs Pumas</p></a>
+                            <h1>7/8/2022   13:00h </h1>
+                        </div>
+                    </div>
+                    
+                    <div class="imagen-port">
+                        <img src="Realvs Fra.png" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <a href=""><p>Real Madrid vs Frankfurt</p></a>
+                            <h1>10/8/2022   14:00h </h1>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="JuvVs Atlet.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <a href=""><p>Juventus vs Atletico de Madrid</p></a>
+                            <h1>7/8/2022   13:45h</h1>
+                        </div>
+                    </div>
+
+                    <div class="imagen-port">
+                        <img src="img/img4.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <a href="https://www.xbox.com/es-MX/games/minecraft"><p>Por Definir</p></a>
+                        </div>
+                    </div>
+
+                    <div class="imagen-port">
+                        <img src="img/img5.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <a href="https://www.xbox.com/es-MX/games/mortal-kombat-11"><p>Por Definir</p></a>
+                            <p>11</p>
+                        </div>
+                    </div> <div class="imagen-port">
+                        <img src="img/img6.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <a href="https://www.xbox.com/es-MX/games/gears-5"><p>Por Definir</p></a>
+                        </div>
+                    </div>
+
+                    <div class="imagen-port">
+                        <img src="img/img7.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <a href="https://www.xbox.com/es-MX/games/halo-the-master-chief-collection"><p>Por Definir</p></a>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img8.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <a href="https://www.xbox.com/es-MX/games/far-cry-6"><p>Por Definir</p></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#inicio">|Inicio|</a>
+            </div>
+            <section class="Canales" id="Canales">
+                <div class="contenedor">
+                    <h2 class="titulo">Canales En Vivo</h2>
+                    <div class="galeria-port">
+    
+                        <div class="imagen-port">
+                            <img src="DirecTv.png"alt="">
+                            <div class="hover-galeria">
+                                <img src="DirecTv.png" alt="">
+                                <a href=https://futbollibre.net/en-vivo/directv-sports><p>DirecTV Sports</p></a>
+                            </div>
+                        </div>
+                        
+                        <div class="imagen-port">
+                            <img src="DirecTVSports2.webp" alt="">
+                            <div class="hover-galeria">
+                                <img src="DirecTVSports2.webp" alt="">
+                                <a href="https://futbollibre.net/en-vivo/directv-sports-2/"><p>DirecTV Sports 2</p></a>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="directv sports 2.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="directv sports 2.jpg" alt="">
+                                <a href="https://futbollibre.net/en-vivo/directv-sports-plus/"><p>DirecTV Sports +</p></a>
+                            </div>
+                        </div>
+    
+                        <div class="imagen-port">
+                            <img src="ESPN.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="ESPN.jpg" alt="">
+                                <a href="https://futbollibre.net/en-vivo/espn-1/"><p>ESPN</p></a>
+                            </div>
+                        </div>
+    
+                        <div class="imagen-port">
+                            <img src="ESPN2.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="ESPN2.jpg" alt="">
+                                <a href="https://futbollibre.net/en-vivo/espn-2/"><p>ESPN 2</p></a>
+                            </div>
+                        </div> <div class="imagen-port">
+                            <img src="ESPN3.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="ESPN3.jpg" alt="">
+                                <a href="https://futbollibre.net/en-vivo/espn-3/"><p>ESPN 3</p></a>
+                            </div>
+                        </div>
+    
+                        <div class="imagen-port">
+                            <img src="TNTsports.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="TNTsports.jpg" alt="">
+                                <a href="https://futbollibre.net/en-vivo/tnt-sports/?hd"><p>TNT Sports</p></a>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="FoxSports.png" alt="">
+                            <div class="hover-galeria">
+                                <img src="FoxSports.png" alt="">
+                                <a href="https://futbollibre.net/en-vivo/fox-sports-1/"><p>Fox Sports</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#inicio">|Inicio|</a>
+                </div>
+    </header>
+    
+</body>
+</html>
